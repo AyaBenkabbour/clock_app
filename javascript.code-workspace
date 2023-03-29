@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../../Downloads/modern-javascript-lesson-78/todos"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "javascript"
+  }
+}

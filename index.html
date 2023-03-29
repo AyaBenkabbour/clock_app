@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="clock.css" />
+    <link rel="stylesheet" href="neo_brutalism.css" />
+
+    <title>clock app</title>
+  </head>
+  <body>
+    <!-- digital clock -->
+    <div class="wrapper_for_digital_clock_container">
+      <div class="shadow_div_digital"></div>
+      <div class="digital_clock_container">
+        <div class="digitalClock"></div>
+      </div>
+      <button class="switch_button clock_button">show analog clock</button>
+    </div>
+    <!-- analog clock -->
+    <div class="wrapper_for_analog_clock_container open">
+      <div class="shadow_div_analog"></div>
+      <div class="analog_clock_container">
+        <div class="clock_wrapper_wrapper">
+          <div class="clock_wrapper">
+            <div class="clockface">
+              <div class="hand hour_hand"></div>
+              <div class="hand minute_hand"></div>
+              <div class="hand second_hand"></div>
+              <div class="hour vertical hour12"></div>
+              <div class="hour horizontal hour3"></div>
+              <div class="hour vertical hour6"></div>
+              <div class="hour horizontal hour9"></div>
+              <div class="center"></div>
+            </div>
+          </div>
+        </div>
+        <button class="switch_button">show digital clock</button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.9.0/date_fns.min.js"></script>
+    <script src="digitalClock.js"></script>
+    <script src="clock.js"></script>
+    <script src="switch.js"></script>
+  </body>
+</html>

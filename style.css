@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "horloge";
+  src: url("DigitalDisplayRegular-ODEO.otf");
+  /* remarque! les fichiers ptlice .ttf don't work but .otf do' */
+}
+* {
+  box-sizing: border-box;
+}
+/* body {
+  background-color: #d2b9f7;
+  background-image: radial-gradient(
+      at 57% 53%,
+      hsla(21, 70%, 62%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 37% 90%, hsla(263, 69%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 71% 59%, hsla(218, 97%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 13% 58%, hsla(17, 87%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 32% 98%, hsla(182, 61%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 63% 83%, hsla(9, 89%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 36% 59%, rgba(190, 109, 248, 0.641) 0px, transparent 50%);
+  height: 100vh;
+  font-family: "horloge";
+  color: white;
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+} */
+
+.merediem {
+  font-family: "montserrat";
+  font-size: 70px;
+}
+.open {
+  display: inline-block !important;
+}
+.wrapper_for_digital_clock_container {
+  display: none;
+  position: relative;
+  width: 85%;
+  height: 40%;
+}
+.shadow_div_digital {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #bce0bf;
+  border: 3px solid black;
+}
+.digital_clock_container {
+  background-color: #e1ecfa;
+  position: absolute;
+  border: 3px solid black;
+  box-shadow: 3px 3px black;
+  border-radius: 30px;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  font-family: "horloge";
+  color: black;
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock_button {
+  position: absolute;
+  left: 40%;
+  top: 120%;
+}
+@media only screen and (max-width: 1400px) {
+  .digital_clock_container {
+    font-size: 170px;
+  }
+  .merediem {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 1224px) {
+  .digital_clock_container {
+    font-size: 130px;
+  }
+  .merediem {
+    font-size: 55px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .digital_clock_container {
+    font-size: 100px;
+  }
+  .merediem {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 821px) {
+  .digital_clock_container {
+    font-size: 80px;
+  }
+  .merediem {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 636px) {
+  .digital_clock_container {
+    font-size: 60px;
+  }
+  .merediem {
+    font-size: 20px;
+  }
+}
